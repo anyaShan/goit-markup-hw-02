@@ -1,1 +1,84 @@
+/* основной цвет текста #757575 */
+/* вторичный цвет текста #212121 */
+/* дополнительный цвет белый #FFFFFF */
+/* дополнительный цвет черный #000000 */
+/* акцент #2196F3 */
+/* вторичный цвет фона #2F303A */
+/* вторичный цвет белого фона #F5F4FA */
 
+body {
+  background-color: #fff;
+  color: #757575;
+}
+
+.list {
+  list-style: none;
+}
+/* LOGO */
+
+.logo-nav,
+.logo-footer {
+  color: #2196f3;
+}
+.logo-nav span {
+  color: #000;
+}
+.logo-footer span {
+  color: #fff;
+}
+
+/* Site navigation */
+
+.site-nav .link {
+  color: #212121;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: #2196f3;
+}
+.contact-nav .link {
+  color: #757575;
+}
+.contact-nav a:hover,
+.contact-nav a:focus {
+  color: #2196f3;
+}
+
+/* Hero */
+
+.hero {
+  background-color: #2f303a;
+}
+.hero-title {
+  color: #fff;
+}
+
+/* Sections */
+
+.section-title {
+  color: #212121;
+}
+
+/* Specifics */
+
+.specifics .caption {
+  color: #212121;
+}
+
+/* Team */
+
+.team .caption {
+  color: #212121;
+}
+
+/* Footer */
+
+footer {
+  background-color: #2f303a;
+}
+address .map {
+  color: #fff;
+}
+address .mail,
+address .tel {
+  color: rgba(255,255,255,.6);
