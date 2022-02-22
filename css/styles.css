@@ -7,9 +7,11 @@
 /* вторичный цвет белого фона #F5F4FA */
 :root {
   --primary-text-color--: #757575;
-  --second-text-color--: #212121;
+  --secondary-text-color--: #212121;
+  --white-text-color--: #ffffff;
   --accent-color--: #2196f3;
   --background-accent-color: #2f303a;
+  --background-secondary-color: #f5f4fa;
 }
 
 body {
@@ -30,13 +32,13 @@ body {
   color: #000;
 }
 .logo-footer span {
-  color: #fff;
+  color: var(--white-text-color--);
 }
 
 /* Site navigation */
 
 .site-nav .link {
-  color: var(--second-text-color--);
+  color: var(--secondary-text-color--);
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -49,6 +51,9 @@ body {
 .contact-nav a:focus {
   color: var(--accent-color--);
 }
+.site-nav .link.current {
+  color: var(--accent-color--);
+}
 
 /* Hero */
 
@@ -56,28 +61,28 @@ body {
   background-color: var(--background-accent-color);
 }
 .hero-title {
-  color: #fff;
+  color: var(--white-text-color--);
 }
 
 /* Sections */
 
 .section-title {
-  color: var(--second-text-color--);
+  color: var(--secondary-text-color--);
 }
 
 /* Specifics */
 
 .specifics-list .caption {
-  color: var(--second-text-color--);
+  color: var(--secondary-text-color--);
 }
 
 /* Team */
 
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--background-secondary-color);
 }
 .team-list .caption {
-  color: var(--second-text-color--);
+  color: var(--secondary-text-color--);
 }
 
 /* Footer */
@@ -86,7 +91,7 @@ footer {
   background-color: var(--background-accent-color);
 }
 address .map {
-  color: #fff;
+  color: var(--white-text-color--);
 }
 address .mail,
 address .tel {
@@ -101,4 +106,29 @@ address .map:focus,
 address .mail:focus,
 address .tel:focus {
   color: var(--accent-color--);
+}
+
+/* Portfolio */
+
+.work-titel {
+  visibility: hidden;
+}
+.work-list .caption {
+  color: var(--secondary-text-color--);
+}
+
+/* Button */
+
+.button.primary {
+  background-color: var(--accent-color--);
+  color: var(--white-text-color--);
+}
+.button.secondary {
+  background-color: var(--background-secondary-color);
+  color: var(--secondary-text-color--);
+}
+.button.secondary:hover,
+.button.secondary:focus {
+  background-color: var(--accent-color--);
+  color: var(--white-text-color--);
 }
