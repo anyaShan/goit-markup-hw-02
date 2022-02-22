@@ -110,10 +110,10 @@ address .tel:focus {
 
 /* Portfolio */
 
-.work-titel {
+.works-titel {
   visibility: hidden;
 }
-.work-list .caption {
+.works-list .caption {
   color: var(--secondary-text-color--);
 }
 
