@@ -35,23 +35,23 @@ body {
   color: var(--white-text-color--);
 }
 
-/* Site navigation */
+/* Header navigation */
 
-.site-nav .link {
+.header-nav-list .link {
   color: var(--secondary-text-color--);
 }
-.site-nav .link:hover,
-.site-nav .link:focus {
+.header-nav-list .link:hover,
+.header-nav-list .link:focus {
   color: var(--accent-color--);
 }
-.contact-nav .link {
+.header-contacts .link {
   color: var(--primary-text-color--);
 }
-.contact-nav a:hover,
-.contact-nav a:focus {
+.header-contacts a:hover,
+.header-contacts a:focus {
   color: var(--accent-color--);
 }
-.site-nav .link.current {
+.header-nav-list .link.current {
   color: var(--accent-color--);
 }
 
@@ -72,16 +72,16 @@ body {
 
 /* Specifics */
 
-.specifics-list .caption {
+.specifics-caption {
   color: var(--secondary-text-color--);
 }
 
 /* Team */
 
-.team {
+.team-content {
   background-color: var(--background-secondary-color);
 }
-.team-list .caption {
+.team-caption {
   color: var(--secondary-text-color--);
 }
 
@@ -90,21 +90,21 @@ body {
 footer {
   background-color: var(--background-accent-color);
 }
-address .map {
+.address-list .map {
   color: var(--white-text-color--);
 }
-address .mail,
-address .tel {
+.address-list .mail,
+.address-list .tel {
   color: rgba(255, 255, 255, 0.6);
 }
-address .map:hover,
-address .mail:hover,
-address .tel:hover {
+.address-list .map:hover,
+.address-list .mail:hover,
+.address-list .tel:hover {
   color: var(--accent-color--);
 }
-address .map:focus,
-address .mail:focus,
-address .tel:focus {
+.address-list .map:focus,
+.address-list .mail:focus,
+.address-list .tel:focus {
   color: var(--accent-color--);
 }
 
@@ -113,22 +113,27 @@ address .tel:focus {
 .works-titel {
   visibility: hidden;
 }
-.works-list .caption {
+.works-caption {
   color: var(--secondary-text-color--);
 }
 
 /* Button */
 
-.button.primary {
+.primary {
   background-color: var(--accent-color--);
   color: var(--white-text-color--);
 }
-.button.secondary {
+.primary:hover,
+.primary:focus {
+  background-color: var(--white-text-color--);
+  color: var(--accent-color--);
+}
+.secondary {
   background-color: var(--background-secondary-color);
   color: var(--secondary-text-color--);
 }
-.button.secondary:hover,
-.button.secondary:focus {
+.secondary:hover,
+.secondary:focus {
   background-color: var(--accent-color--);
   color: var(--white-text-color--);
 }
