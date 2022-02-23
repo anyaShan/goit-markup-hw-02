@@ -101,7 +101,7 @@ body {
 
   font-weight: 700;
   font-size: 36px;
-  line-height: 1, 17;
+  line-height: 1.17;
   text-align: center;
 }
 
@@ -116,7 +116,6 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 .specifics-text {
@@ -174,8 +173,20 @@ footer {
 
 /* Portfolio */
 
+.works-titel {
+  visibility: hidden;
+}
 .works-caption {
   color: var(--secondary-text-color--);
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.works-text {
+  font-size: 16px;
+  line-height: 1.9;
 }
 
 /* Button */
@@ -183,6 +194,12 @@ footer {
 .primary {
   background-color: var(--accent-color--);
   color: var(--white-text-color--);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 .primary:hover,
 .primary:focus {
@@ -192,6 +209,13 @@ footer {
 .secondary {
   background-color: var(--background-secondary-color);
   color: var(--secondary-text-color--);
+  cursor: pointer;
+
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
 }
 .secondary:hover {
   background-color: var(--accent-color--);
