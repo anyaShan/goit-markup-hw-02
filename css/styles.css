@@ -17,6 +17,9 @@
 body {
   background-color: #fff;
   color: var(--primary-text-color--);
+
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
 }
 
 .link {
@@ -30,6 +33,14 @@ body {
 .logo-nav,
 .logo-footer {
   color: var(--accent-color--);
+
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+
+  /* identical to box height */
+  letter-spacing: 0.03em;
 }
 .logo-nav span {
   color: #000;
@@ -40,6 +51,12 @@ body {
 
 /* Header navigation */
 
+.header {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
 .header-nav-list .link {
   color: var(--secondary-text-color--);
 }
@@ -47,14 +64,17 @@ body {
 .header-nav-list .link:focus {
   color: var(--accent-color--);
 }
+.header-nav-list .link.current {
+  color: var(--accent-color--);
+}
+.header-contacts {
+}
+
 .header-contacts .link {
   color: var(--primary-text-color--);
 }
 .header-contacts a:hover,
 .header-contacts a:focus {
-  color: var(--accent-color--);
-}
-.header-nav-list .link.current {
   color: var(--accent-color--);
 }
 
@@ -65,18 +85,43 @@ body {
 }
 .hero-title {
   color: var(--white-text-color--);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 /* Sections */
 
 .section-title {
   color: var(--secondary-text-color--);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1, 17;
+  text-align: center;
 }
 
 /* Specifics */
 
+.specifics-title {
+  visibility: hidden;
+}
 .specifics-caption {
   color: var(--secondary-text-color--);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.specifics-text {
+  font-size: 14px;
+  line-height: 1.7;
 }
 
 /* Team */
@@ -86,12 +131,28 @@ body {
 }
 .team-caption {
   color: var(--secondary-text-color--);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+.team-text {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
 }
 
 /* Footer */
 
 footer {
   background-color: var(--background-accent-color);
+}
+.address-list {
+  font-style: normal;
+
+  font-size: 14px;
+  line-height: 1.7;
 }
 .address-list .map {
   color: var(--white-text-color--);
