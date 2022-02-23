@@ -113,9 +113,6 @@ footer {
 
 /* Portfolio */
 
-.works-titel {
-  visibility: hidden;
-}
 .works-caption {
   color: var(--secondary-text-color--);
 }
