@@ -11,6 +11,7 @@
   --white-text-color--: #ffffff;
   --black-text-color--: #000000;
   --accent-color--: #2196f3;
+  --accent-color-secondary--: #188ce8;
   --background-primary-color: #ffffff;
   --background-accent-color: #2f303a;
   --background-secondary-color: #f5f4fa;
@@ -60,16 +61,11 @@ body {
 .header-nav-list .link {
   color: var(--secondary-text-color--);
 }
+.header-nav-list .link.current,
 .header-nav-list .link:hover,
 .header-nav-list .link:focus {
   color: var(--accent-color--);
 }
-.header-nav-list .link.current {
-  color: var(--accent-color--);
-}
-.header-contacts {
-}
-
 .header-contacts .link {
   color: var(--primary-text-color--);
 }
@@ -128,6 +124,9 @@ body {
 .team-content {
   background-color: var(--background-secondary-color);
 }
+.team-item {
+  background-color: var(--background-primary-color);
+}
 .team-caption {
   color: var(--secondary-text-color--);
 
@@ -162,9 +161,7 @@ footer {
 }
 .address-list .map:hover,
 .address-list .mail:hover,
-.address-list .tel:hover {
-  color: var(--accent-color--);
-}
+.address-list .tel:hover,
 .address-list .map:focus,
 .address-list .mail:focus,
 .address-list .tel:focus {
@@ -191,9 +188,17 @@ footer {
 
 /* Button */
 
-.primary {
+.hero-button,
+.works-button {
+  font-family: inherit;
+  border: 0;
+  border-radius: 4px;
+}
+
+.hero-button {
   background-color: var(--accent-color--);
   color: var(--white-text-color--);
+  cursor: pointer;
 
   font-weight: 700;
   font-size: 16px;
@@ -201,23 +206,22 @@ footer {
   text-align: center;
   letter-spacing: 0.06em;
 }
-.primary:hover,
-.primary:focus {
-  background-color: var(--white-text-color--);
-  color: var(--accent-color--);
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--accent-color-secondary--);
+  color: var(--white-text-color--);
 }
-.secondary {
+.works-button {
   background-color: var(--background-secondary-color);
   color: var(--secondary-text-color--);
   cursor: pointer;
 
-  font-family: 'Roboto';
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
 }
-.secondary:hover {
+.works-button:hover {
   background-color: var(--accent-color--);
   color: var(--white-text-color--);
 }
