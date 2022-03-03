@@ -221,7 +221,9 @@ footer {
   line-height: 1.6;
   text-align: center;
 }
-.works-button:hover {
+.works-button.current,
+.works-button:hover,
+.works-button:focus {
   background-color: var(--accent-color--);
   color: var(--white-text-color--);
 }
